@@ -1,0 +1,122 @@
+@font-face {
+  font-family: CaslonAntique;
+  src: url("fonts/CaslonAntique.ttf");
+}
+@font-face {
+  font-family: CaslonAntiqueBold;
+  src: url("fonts/CaslonAntique-Bold.ttf");
+}
+@font-face {
+  font-family: CaslonAntiqueItalic;
+  src: url("fonts/CaslonAntique-Italic.ttf");
+}
+@font-face {
+  font-family: CaslonAntiqueBoldItalic;
+  src: url("fonts/CaslonAntique-BoldItalic.ttf");
+}
+.main-body {
+  background-image: url("images/homepage.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "CaslonAntiqueBold";
+  text-shadow: 2px 5px 3px #981112;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "CaslonAntiqueItalic";
+  font-size: 3rem;
+}
+
+.socials-container {
+  color: white;
+  float: right;
+}
+.socials-container a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+}
+.socials-container ul {
+  list-style-type: none;
+}
+.socials-container ul li {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.main-content {
+  padding: 4rem 0;
+}
+
+.logo-contianer {
+  margin-top: 6rem;
+  margin-bottom: 18rem;
+}
+
+.album-container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.album-container h1 {
+  font-size: 6rem;
+}
+.album-container .album-cover {
+  margin-top: 5rem;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gigs-container h1 {
+  margin-bottom: 2rem;
+}
+.gigs-container .gigs {
+  border: 5px solid white;
+  box-shadow: 2px 5px 3px #981112;
+  padding: 3rem 4rem;
+  color: white;
+  font-family: "CaslonAntique";
+  font-size: 2rem;
+  text-align: center;
+  list-style-type: none;
+}
+.gigs-container .gigs ul {
+  margin-bottom: 0;
+}
+.gigs-container .gigs a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .main-body {
+    padding: 1rem;
+  }
+  .main-body .socials-container ul li {
+    padding: 0;
+  }
+  .main-body .album-container h1 {
+    font-size: 2rem;
+  }
+  .main-body .album-container .album-cover {
+    max-width: 400px;
+  }
+  .main-body .gigs-container .gigs {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

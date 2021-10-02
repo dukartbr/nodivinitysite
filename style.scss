@@ -1,0 +1,139 @@
+@font-face {
+  font-family: CaslonAntique;
+  src: url("fonts/CaslonAntique.ttf");
+}
+
+@font-face {
+  font-family: CaslonAntiqueBold;
+  src: url("fonts/CaslonAntique-Bold.ttf");
+}
+
+@font-face {
+  font-family: CaslonAntiqueItalic;
+  src: url("fonts/CaslonAntique-Italic.ttf");
+}
+
+@font-face {
+  font-family: CaslonAntiqueBoldItalic;
+  src: url("fonts/CaslonAntique-BoldItalic.ttf");
+}
+
+// GLOBAL STYLES
+
+.main-body {
+  background-image: url("images/homepage.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  // background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "CaslonAntiqueBold";
+  text-shadow: 2px 5px 3px #981112;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "CaslonAntiqueItalic";
+  font-size: 3rem;
+}
+
+// CUSTOM CLASSES
+
+.socials-container {
+  color: white;
+  float: right;
+  a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 10;
+  }
+  ul {
+    list-style-type: none;
+    li {
+      font-size: 1.5rem;
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+.main-content {
+  padding: 4rem 0;
+}
+
+.logo-contianer {
+  margin-top: 6rem;
+  margin-bottom: 18rem;
+}
+
+.album-container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  h1 {
+    font-size: 6rem;
+  }
+  .album-cover {
+    margin-top: 5rem;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.gigs-container {
+  h1 {
+    margin-bottom: 2rem;
+  }
+  .gigs {
+    border: 5px solid white;
+    box-shadow: 2px 5px 3px #981112;
+    padding: 3rem 4rem;
+    color: white;
+    font-family: "CaslonAntique";
+    font-size: 2rem;
+    text-align: center;
+    list-style-type: none;
+    ul {
+      margin-bottom: 0;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main-body {
+    padding: 1rem;
+    .socials-container {
+      ul {
+        li {
+          padding: 0;
+        }
+      }
+    }
+    .album-container {
+      h1 {
+        font-size: 2rem;
+      }
+      .album-cover {
+        max-width: 400px;
+      }
+    }
+    .gigs-container {
+      .gigs {
+        padding: 1rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
